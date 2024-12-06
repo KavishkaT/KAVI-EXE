@@ -28,7 +28,7 @@
 
 
 ## ` Pair with WhatsApp V1 💀☑️`
-<h2 align="left">  <a href="https://replit.com/@kavishkatharus1/KAVIEXEV1PAIR#README.md"><img src="https://play-lh.googleusercontent.com/901aMQFFnVoX2T-YuJmTIwpPve_SUgMv_QSyzMSPtAqt_l0CyXN1DxfD6xXU0r2f9iM=w240-h480-rw" width="90" />
+<h2 align="left">  <a href="https://kavi-exe-v1-pair.onrender.com"><img src="https://play-lh.googleusercontent.com/901aMQFFnVoX2T-YuJmTIwpPve_SUgMv_QSyzMSPtAqt_l0CyXN1DxfD6xXU0r2f9iM=w240-h480-rw" width="90" />
 </a>
 
 
