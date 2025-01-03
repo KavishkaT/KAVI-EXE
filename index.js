@@ -82,7 +82,7 @@ conn.ev.on("call", async(json) => {
     		if(id.status == "offer") {
     			if(id.isGroup == false) {
     				await conn.sendMessage(id.from, {
-    					text: `⚠️︱Call rejected automaticaly Because owner is busy right now\n`KAVI-EXE-V1-CALL BLOCK` 🚫`, 
+    					text: `⚠️︱Call rejected automaticaly Because owner is busy right now\n❙ 𝗞𝗔𝗩𝗜-𝗘𝗫𝗘-𝗩1 𝗖𝗔𝗟𝗟 𝗥𝗘𝗝𝗘𝗖𝗧𝗘𝗗 🚫✓`, 
 							mentions: [id.from]
     				});
     				await conn.rejectCall(id.id, id.from);
