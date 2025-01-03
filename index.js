@@ -96,8 +96,8 @@ conn.ev.on("call", async(json) => {
     		if(id.status == "offer") {
     			if(id.isGroup == false) {
     				await conn.sendMessage(id.from, {
-    					text: `The user is busy at the moment so Auto Call Blocking has been set So Dont panic 👊❤‍🩹`
-							mentions: [id.from]
+    					text: `The user is busy at the moment so Auto Call Blocking has been set So Dont panic`
+					 mentions: [id.from]
     				});
     				await conn.rejectCall(id.id, id.from);
     			} else {
