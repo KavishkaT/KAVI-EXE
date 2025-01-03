@@ -96,9 +96,7 @@ conn.ev.on("call", async(json) => {
     		if(id.status == "offer") {
     			if(id.isGroup == false) {
     				await conn.sendMessage(id.from, {
-    					text: `The user is busy at the moment so Auto Call Blocking has been set So Dont panic 👊❤‍🩹`
-
-> 𝙆𝘼𝙑𝙄-𝙀𝙓𝙀-𝘼𝙐𝙏𝙊 𝘾𝘼𝙇𝙇 𝘽𝙇𝙊𝘾𝙆𝙄𝙉𝙂
+    					text: `The user is busy at the moment, so Auto Call Blocking has been set So Dont panic 👊❤‍🩹` 𝙆𝘼𝙑𝙄-𝙀𝙓𝙀-𝘼𝙐𝙏𝙊 𝘾𝘼𝙇𝙇 𝘽𝙇𝙊𝘾𝙆𝙄𝙉𝙂
 							mentions: [id.from]
     				});
     				await conn.rejectCall(id.id, id.from);
