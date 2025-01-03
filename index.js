@@ -88,6 +88,27 @@ await conn.readMessages([mek.key])
   const text = `${config.AUTO_STATUS__MSG}`
   await conn.sendMessage(user, { text: text, react: { text: '💜', key: mek.key } }, { quoted: mek })
 }
+
+
+conn.ev.on("call", async(json) => {
+	  if(config.ANTI_CALL === "true" ) { 
+    	for(const id of json) {
+    		if(id.status == "offer") {
+    			if(id.isGroup == false) {
+    				await conn.sendMessage(id.from, {
+    					text: `The user is busy at the moment, so Auto Call Blocking has been set. So Don't panic 👊❤‍🩹`
+
+> 𝙆𝘼𝙑𝙄-𝙀𝙓𝙀-𝘼𝙐𝙏𝙊 𝘾𝘼𝙇𝙇 𝘽𝙇𝙊𝘾𝙆𝙄𝙉𝙂
+							mentions: [id.from]
+    				});
+    				await conn.rejectCall(id.id, id.from);
+    			} else {
+    				await conn.rejectCall(id.id, id.from);
+    			}
+    		}
+    	}}
+    });
+
 const m = sms(conn, mek)
 const type = getContentType(mek.message)
 const content = JSON.stringify(mek.message)
