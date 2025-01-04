@@ -21,7 +21,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 https://github.com/Baymaxff/KAVI-EXE`;
 
-        await conn.sendMessage(from, { image: { url: `https://files.catbox.moe/f1wknu.jpeg` }, caption: dec, contextInfo: { mentionedJid: [m.sender], forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: 'https://whatsapp.com/channel/0029Vb22FT9HFxOzBtWOwT0X', newsletterName: 'ᴋᴀᴠɪ-ᴇxᴇ', serverMessageId: 143 } } }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: `https://files.catbox.moe/j4lyrn.jpeg` }, caption: dec, contextInfo: { mentionedJid: [m.sender], forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: 'https://whatsapp.com/channel/0029Vb22FT9HFxOzBtWOwT0X', newsletterName: 'ᴋᴀᴠɪ-ᴇxᴇ', serverMessageId: 143 } } }, { quoted: mek });
 
         // Send audio
         await conn.sendMessage(from, {
