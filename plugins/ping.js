@@ -1,62 +1,13 @@
-const config = require('../config');
-const { cmd, commands } = require('../command');
-
-cmd({
-    pattern: "ping",
-    alias: "speed",
-    desc: "Check bot's response time.",
-    category: "main",
-    react: "⚡",
-    filename: __filename
-},
-async (conn, mek, m, { from, quoted, reply }) => {
-    try {
-        const startTime = Date.now();
-
-        // Add a short delay
-        await new Promise(resolve => setTimeout(resolve, 100)); // 100ms delay
-
-        const endTime = Date.now();
-        const ping = endTime - startTime;
-
-        // Send the ping result
-        await conn.sendMessage(from, { 
-            text: `*⚡ 𝗞𝗔𝗩𝗜-𝗘𝗫𝗘 SPEED: ${ping}ms*`, 
-            contextInfo: {
-                mentionedJid: [m.sender],
-                forwardingScore: 999,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '',
-                    newsletterName: '𝗞𝗔𝗩𝗜-𝗘𝗫𝗘',
-                    serverMessageId: 143
-                }
-            }
-        }, { quoted: mek });
-    } catch (e) {
-        console.error(e);
-        reply(`An error occurred: ${e.message}`);
-    }
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const { zokou } = require("../framework/zokou");
+zokou({ nomCom: "ping", reaction: "🫀", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+    console.log("Commande saisie !!!s");
+    let z = 'KYPHER_XMD IS ALIVE... \n\n\nGO GITHUB AND SEARCH KYPHER_XMD FORK THE REPO DEPLOY AND DM FOR YOUR REWARD\n\n\n';
+    let d = '                                                                           CREATED BY KYPHER HIMSELF';
+    let varmess = z + d;
+    var video = 'https://i.imgur.com/UfpoNZT.mp4';
+    await zk.sendMessage(dest, { video: { url: img }, caption: varmess });
+    //console.log("montest")
 });
-
-// ping2 
-
-cmd({
-    pattern: "ping2",
-    desc: "Check bot's response time.",
-    category: "main",
-    react: "🍂",
-    filename: __filename
-},
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-    try {
-        const startTime = Date.now()
-        const message = await conn.sendMessage(from, { text: '> *PINGING...*' })
-        const endTime = Date.now()
-        const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `> *🔥 𝗞𝗔𝗩𝗜-𝗘𝗫𝗘I SPEED : ${ping}ms*` }, { quoted: message })
-    } catch (e) {
-        console.log(e)
-        reply(`${e}`)
-    }
-})
+console.log("mon test");
