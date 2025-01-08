@@ -12,6 +12,7 @@ ALIVE_MSG: process.env.ALIVE_MSG || "KAVI EXE_V1_Connected ☑️_📂𝙳𝙴�
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 MODE: process.env.MODE || "public",
 ALWAYS_ONLINE : process.env.ALWAYS_ONLINE || "false",
+PREFIX: process.env.PREFIX || ",",
 AUTO_TYPING: process.env.AUTO_TYPING || "false",
 AUTO_RECORDING: process.env.AUTO_RECORDING || "true",
 AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
