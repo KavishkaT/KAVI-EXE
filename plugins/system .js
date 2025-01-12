@@ -33,7 +33,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363366147331561@newsletter_10',
+                    newsletterJid: '120363366147331561@newsletter',
                     newsletterName: '𝙆𝘼𝙑𝙄-𝙀𝙓𝙀-𝙑1',
                     serverMessageId: 143
                 }
