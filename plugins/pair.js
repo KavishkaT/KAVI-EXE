@@ -43,4 +43,3 @@ async (conn, mek, m, {from, q, reply, l }) => {
 });
 
 
-https://pair-code-production.up.railway.app/code?number=94789123880
