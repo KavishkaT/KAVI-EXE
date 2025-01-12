@@ -1,5 +1,6 @@
 const { cmd } = require('../command');
 const config = require('../config');
+const axios = require('axios');
 
 cmd({
     pattern: "owner",
